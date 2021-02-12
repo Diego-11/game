@@ -1,9 +1,8 @@
 import typing
-from logic.monsters.goblin import Goblin
-
+from new_struct.monsters.goblin import Goblin
 
 if typing.TYPE_CHECKING:
-        from logic.monsters.monster import Monster
+    from logic.monsters.monster import Monster
 
 def takeDamageTest(monsterAttack: 'Monster'):
     goblin = Goblin()
@@ -23,4 +22,3 @@ def tests():
 
 if __name__ == '__main__':
 	tests()
-    
